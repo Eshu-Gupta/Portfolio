@@ -1,0 +1,50 @@
+<Doctype! html>
+<html>
+<style>
+.flex-container{
+    display-flex;
+    margin:100px 600px;
+    width:300px;
+    height:400px;
+    background-color:white;
+    border: 3px solid white;
+    border-radius: 10%;
+    text-align:center;}
+.button{
+    background-color: yellow;}
+.button:hover{
+    background-color:lightgreen;}
+</style> 
+</head>
+
+<body style="background-color:skyblue">
+
+<div class="flex-container">
+     <div><h3>Amount Calculator</h3></div>
+     <hr>
+     <div>Enter Bill Amount!</div><br>
+     <div>$<input type="number" id="bill" name="amount" value=" " placeholder="Bill Amount"><div>
+     <hr>
+     <div>How many people are sharing the Bill?</div><br>
+     <div><input type="number" id="people" name="people" value" " placeholder="No. of people(default 1)"></div>
+     <hr>
+     <div><button type="button" class="button" onclick="myFunction()">Calculate</button></div>
+     <div><p id="demo"></p> </div>
+</div>
+
+<script>
+   function myFunction() {
+      var a = document.getElementById("bill").value;
+      var b = document.getElementById("people").value;
+      if(a<1){
+       alert("Please enter positive number");}
+      else if(b==0){
+           b=1;}
+      var c = a/b;
+      document.getElementById("demo").innerHTML="Contribution per person is : " + c +"$";
+   }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>First Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+p{font-size:20px;
+   text-align:center}
+
+h1,h2,h3{ 
+   text-align:center;}
+
+.flex-container1{
+  display:flex;
+  background-color: lightblue;
+  flex-direction:row;
+  justify-content:space-around;
+  padding: 15px;
+  font-size: 20px;
+}
+.sticky{
+  posiiton:-webkit-sticky;
+  position:sticky;
+  top:0px;
+  z-index:2;
+}
+
+img{
+  position:absolute;
+  width:100%;
+  height:450px;
+  z-index:-1;
+}
+
+.container1{
+   margin:0;
+   box-sizing:border-box;
+   width:100%;
+   height:500px;
+   padding-top:50px;
+   text-align:center;
+}
+
+.read{
+   display:inline-block;
+   background-color:grey;
+   padding: 10px;
+}
+
+.container2{
+   display:flex;
+   height:120px;
+   padding:0px 200px;
+   text-align: center;
+   justify-content:space-between;
+   }
+
+.container3{
+   display:flex;
+   background-color:orange;
+   justify-content:center;
+   margin:40px;
+   padding: 60px 40PX;
+   height:500px;
+}
+
+.item1{
+  background-color:white;
+  flex:1;
+  margin:20px;
+  position:relative;
+  z-index:1}
+
+.text{
+ padding-top: 250px;
+ font-size:20px;
+ text-align:center;}
+
+.container4{
+  box-sizing:border-box;
+  text-align:center;
+}
+
+.container5{
+   display:flex;
+ }
+
+.item2{
+   background-color:aqua;
+   padding: 0px 40px;}
+
+.item3{
+   background-color:chartreuse;
+   padding: 0px 40px;}
+
+.footer{
+    background-color:thistle;
+    text-align: center;
+    height:150px;
+    margin-top: 0px;}
+ 
+.links{
+  padding:100px;
+  margin:100px;
+  position:relative;
+  z-index:1;}
+                                                                                                                                                                                                                            
+</style>
+</head>
+    
+<body style="background-color:AliceBlue;">
+   <div class="sticky">
+    <div class="flex-container1">
+        <div><a href="#Home">Home</a></div>
+        <div><a href="#About">About Us</a></div>
+        <div><a href="#Service">Services</a></div>
+        <div><a href="#contact">Contact Us</a></div>
+    </div>
+   </div>
+
+
+   <img id="Home" src="https://lh3.googleusercontent.com/NWnKvD5Fv-Dl7WW7-RTHiDwuH5c9q2TR1ssHvKqxwwSlfPMb5Tmp3aLAuoJoikoctcjlNg=s170" width="100%">
+   <div class="container1">
+       <h1>Welcome to ACME WEB SOLUTIONS</h1><br>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
+            officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus.
+            Perferendis officiis deserunt velit voluptas nobis sequi
+            animi totam, accusantium, ex eius quia, natus quo?</p><br><br>
+       <p class="read"><a href="#Service">Read more...</a></p>
+   </div>
+   <h2>Web & Application Development</h2>
+   <div class="container2">
+     <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
+            officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus.
+            Perferendis officiis deserunt velit voluptas nobis sequi
+            animi totam, accusantium, ex eius quia, natus quo?</p></div>
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
+            officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus.
+            Perferendis officiis deserunt velit voluptas nobis sequi
+            animi totam, accusantium, ex eius quia, natus quo?</p></div>
+   </div>
+
+   <div class="container3" id="Service">
+    <div class="item"><h3>SERVICES PROVIDED</h3></div>
+     <div class="item1">
+        <img src="https://lh3.googleusercontent.com/6tttJd8zY5Vr3lZnX-hY1wnZEJz3oMDNzFx1pIIbU7BU4JpfTdq9jz3Mj5xbnpmMVFuDT9g=s128" style="width:100%; height:50%;">
+       <div class="text"> 
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
+           quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+       </div>
+     </div>
+      <div class="item1">
+         <img src="https://lh3.googleusercontent.com/B-1Q-uga0IloL00nrfxTuOI0SrDNVpDX0ncVG33msepDGcSPi0SCcbHwmLd0z2bTrgEL=s120"  style="width:100%; height:50%;">
+       <div class="text">
+        <h2>Mobile Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
+           quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+       </div>
+     </div>
+     <div class="item1">
+          <img src="https://lh3.googleusercontent.com/JnJ3J44mAc7vRc5H5mCIjqw1iku1FeAvjj9l0ERQIa3QzthqA3BmHFEFk0PPhJDh0qKqCA=s128"  style="width:100%; height:50%;">
+        <div class="text">
+        <h2>Marketing Tech</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
+           quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+        </div>
+     </div>
+   </div>
+
+
+   <div class="container4">
+   <br>
+   <h2>We handle all of your digital needs</h2><br>
+   <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p><br>
+   </div>
+     
+   <div class="container5">
+   <div class="item2"><br>
+    <h2 id="About">Contact Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
+           quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+    <p style="text-align:center;">contact@acmewebsolutions.test</p>
+    </div>
+   <div class="item3"><br>
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
+           quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+    </div>
+   </div>
+   
+   <div class="footer">
+    <br>
+    <h3 id="contact">Website By ESHU GUPTA -----My Contacts </h3>
+       <span style="display:inline-block; width: 10px;"></span>
+        <a class="links" href="https://www.facebook.com/eshu.gupta.9026" target="blank"><img src="https://lh3.googleusercontent.com/pDIKxnGoxNbQD9L3OOrAaJneOJ5KcgCV059dGO0nLEs7WmINKrlwzU8ama0utbFRGomyjJ0=s85" alt="Facebook" style="width:30px;height:30px;" ></a>
+        <a class="links" href="https://www.instagram.com/guptaeshu0907/" target="blank"><img src="https://lh3.googleusercontent.com/z1NK0uP19Kpavnh4HIeQen4B_l6vQuEN93Zd58W0aiTHyeUgmc6nsp74bOokyXsjAMyYUw=s85" alt="Instagram" style="width:30px;height:30px;" ></a>
+        <a class="links"  href="https://www.linkedin.com/in/eshu-k-762634202" target="blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC" alt="Linkedin" style="width:30px;height:30px;" ></a>
+   </div>
+   
+                    
+                    
+</body>
+   
+</html>
