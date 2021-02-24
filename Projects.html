@@ -7,6 +7,8 @@
 
 body{
     background-image:linear-gradient(to right,lightblue,#26A1E5,blue);} 
+.image{ width:150px;
+        height:50px;}
 
 .header{
    box-sizing:border-box;
@@ -31,13 +33,24 @@ table,td{
    background-color:#26E590;
    width:60%;
    }
- 
+
+@media only screen and (max-width: 768px) {
+      .header{font-size:15px;}
+      table,td{margin:10px 30px;
+               padding:5px;}
+       .content{ font-size:20px;
+                 margin:5px;}
+       .image{ width:80px;
+               height:30px;}
+       .more{ margin:0px 5px;}
+       
+ }
 
 </style>
 
 <body >
     <div class="header">
-      <img src="https://explorin.io/assets/images/Home/logo.png" alt="Explorin" style="width:150px;height:40px;">
+      <img class="image" src="https://explorin.io/assets/images/Home/logo.png" alt="Explorin">
    <a class="more" href="MCEP0114_1_2.html" target="_blank">About</a>
    <a class="more" href="Projects.html" target="_blank">Projects</a>
    <a class="more" href="Contact.html" target="_blank">Contacts</a>

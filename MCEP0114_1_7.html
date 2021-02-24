@@ -4,6 +4,13 @@
 <title>First Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+*{
+   box-sizing:border-box;}
+
+.row::after{
+   content: "";
+   clear:both;
+    display:block;}
 
 p{font-size:20px;
    text-align:center}
@@ -66,14 +73,17 @@ img{
 }
 
 .item1{
+  display:flex;
   background-color:white;
-  flex:1;
+  flex-direction:column;
   margin:20px;
   position:relative;
   z-index:1}
 
+.image{ 
+     height:50%;}
+
 .text{
- padding-top: 250px;
  font-size:20px;
  text-align:center;}
 
@@ -105,7 +115,16 @@ img{
   margin:100px;
   position:relative;
   z-index:1;}
-                                                                                                                                                                                                                            
+
+               
+@media only screen and (max-width: 768px) {
+      .container3{flex-direction:column;}
+      .item1{ flex-direction:row;}
+      .image{ width:50%}
+      .text{ width:50%;} 
+}
+   
+                                                                                                                                                                                                             
 </style>
 </head>
     
@@ -126,9 +145,10 @@ img{
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
             officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus.
             Perferendis officiis deserunt velit voluptas nobis sequi
-            animi totam, accusantium, ex eius quia, natus quo?</p><br><br>
+            animi totam, accusantium, ex eius quia, natus quo?</p><br>
        <p class="read"><a href="#Service">Read more...</a></p>
    </div>
+
    <h2>Web & Application Development</h2>
    <div class="container2">
      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde
@@ -140,11 +160,11 @@ img{
             Perferendis officiis deserunt velit voluptas nobis sequi
             animi totam, accusantium, ex eius quia, natus quo?</p></div>
    </div>
-
+<div class="row">
    <div class="container3" id="Service">
     <div class="item"><h3>SERVICES PROVIDED</h3></div>
      <div class="item1">
-        <img src="https://lh3.googleusercontent.com/6tttJd8zY5Vr3lZnX-hY1wnZEJz3oMDNzFx1pIIbU7BU4JpfTdq9jz3Mj5xbnpmMVFuDT9g=s128" style="width:100%; height:50%;">
+        <div class="image"><img src="https://lh3.googleusercontent.com/6tttJd8zY5Vr3lZnX-hY1wnZEJz3oMDNzFx1pIIbU7BU4JpfTdq9jz3Mj5xbnpmMVFuDT9g=s128" style="width:100%; height:50%;"></div>
        <div class="text"> 
         <h2>Web Development</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
@@ -152,7 +172,7 @@ img{
        </div>
      </div>
       <div class="item1">
-         <img src="https://lh3.googleusercontent.com/B-1Q-uga0IloL00nrfxTuOI0SrDNVpDX0ncVG33msepDGcSPi0SCcbHwmLd0z2bTrgEL=s120"  style="width:100%; height:50%;">
+         <div class="image"><img src="https://lh3.googleusercontent.com/B-1Q-uga0IloL00nrfxTuOI0SrDNVpDX0ncVG33msepDGcSPi0SCcbHwmLd0z2bTrgEL=s120"  style="width:100%; height:50%;"></div>
        <div class="text">
         <h2>Mobile Development</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
@@ -160,7 +180,7 @@ img{
        </div>
      </div>
      <div class="item1">
-          <img src="https://lh3.googleusercontent.com/JnJ3J44mAc7vRc5H5mCIjqw1iku1FeAvjj9l0ERQIa3QzthqA3BmHFEFk0PPhJDh0qKqCA=s128"  style="width:100%; height:50%;">
+          <div class="image"><img src="https://lh3.googleusercontent.com/JnJ3J44mAc7vRc5H5mCIjqw1iku1FeAvjj9l0ERQIa3QzthqA3BmHFEFk0PPhJDh0qKqCA=s128"  style="width:100%; height:50%;"></div>
         <div class="text">
         <h2>Marketing Tech</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque
@@ -168,7 +188,7 @@ img{
         </div>
      </div>
    </div>
-
+</div>
 
    <div class="container4">
    <br>

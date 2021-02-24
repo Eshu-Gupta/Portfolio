@@ -2,7 +2,43 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flexbox</title>
+<title>Flexbox Advanced</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+     $(".item1").click(function(){
+        $(".item3").append("<p style='color:red;'>This text has been added after clicking on the header.</p>");
+     });
+
+
+     $(".item2").mouseenter(function(){
+         var item2_color=$(this).css("background-color");
+         var item4_color=$(".item4").css("background-color");
+         $(".item2").css("background-color",item4_color);
+         $(".item4").css("background-color",item2_color);
+     });
+      $(".item2").mouseleave(function(){
+         $(".item2").css("background-color","#F9B4B4");
+         $(".item4").css("background-color","#74F827");
+     });
+     $(".item4").mouseenter(function(){
+         var item4_color=$(this).css("background-color");
+         var item2_color=$(".item2").css("background-color");
+         $(".item2").css("background-color",item4_color);
+         $(".item4").css("background-color",item2_color);
+     });
+      $(".item4").mouseleave(function(){
+         $(".item2").css("background-color","#F9B4B4");
+         $(".item4").css("background-color","#74F827");
+     });
+   
+
+     $(".item6").click(function(){
+        $(".item6 p").css("visibility","hidden");
+        $(this).css({"background-image":"url(' https://drive.google.com/thumbnail?id=1-8YP53P9yCnDiPHv2SjcIlsOXymyQCpn')","background-size":"cover","background-postion":"right center"});
+     });      
+  });
+</script>
 <style>
 .flex-container{
    display:flex;
@@ -52,6 +88,7 @@
    width:700px;
    height:50px;
    padding-top:15px;
+       margin:4px;
 }
 
 .item2{
@@ -59,11 +96,12 @@
    width:200px;
    height:250px;
    padding-top:15px;
+       margin:0px 4px;
 }
 
 .item3 {
    background-color: #FA9721 ;
-   width:500px;
+   width:496px;
    height:200px;
    padding-top:15px;
 }
@@ -73,27 +111,30 @@
    width:200px;
   height:150px;
    padding-top:15px;
+       margin:4px 4px;
 }
 
  .item5 {
    background-color: red ;
-   width:500px;
+   width:496px;
    height:200px;
    padding-top:15px;
+       margin:4px 0px;
 }
 
 .item6 {
    background-color: #42A30A  ;
    width:500px;
-   line-height:40px;
+   height:150px;
    padding-top:15px;
+    margin:0px 4px;
 }
 
 
 .item7 {
    background-color:  #F9B4B4 ;
-   width:200px;
-  height:40px;
+   width:196px;
+  height:150px;
    padding-top:15px;
 
 }
@@ -103,7 +144,10 @@
    width:700px;
    height:40px;
    padding-top:15px;
+    margin:4px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
    .flex-container{ margin: 15px 20px;}
@@ -118,8 +162,6 @@
 </head>
 
 <body>
-
-<h2 style="text-align:center; background-color:#42A30A ;" >Week 1|Day 3 task-Positioning Using Flexbox</h2>
 
 <div class="flex-container">
      <div class="item1">Header</div>
@@ -137,7 +179,7 @@
  </div>
 
    <div class="flex-container4">  
-     <div class="item6">Images</div>
+     <div class="item6"><p style="text-align:center;font-weight:bold;font-size:25px;">Related Images</p></div>
      <div class="item7">Posts</div>
    </div>
      <div class="item8">Footer</div>
